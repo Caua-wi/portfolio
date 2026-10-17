@@ -72,6 +72,7 @@ h2 {
     margin: 0 0 16px;
     padding-bottom: 8px;
     border-bottom: 2px solid var(--cor-borda);
+    transition: border-bottom-color 0.25s ease;
 }
 
 p {
@@ -103,6 +104,23 @@ p {
     margin-bottom: 0;
 }
 
+/* Animação ao passar o mouse: a caixa sobe, ganha sombra e destaca a borda */
+.section {
+    transition: transform 0.25s ease, box-shadow 0.25s ease,
+                border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 102, 204, 0.15);
+    border-color: var(--cor-destaque);
+    background-color: var(--cor-superficie);
+}
+
+.section:hover h2 {
+    border-bottom-color: var(--cor-destaque);
+}
+
 /* ---------- Habilidades ---------- */
 /* Funciona com <div class="section"> ou <div class="section habilidades"> */
 
@@ -126,6 +144,13 @@ p {
     background-color: var(--cor-superficie);
     border: 1.5px solid var(--cor-destaque);
     border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.section li:hover {
+    background-color: var(--cor-destaque);
+    color: #fff;
+    transform: scale(1.06);
 }
 
 /* ---------- Links ---------- */
