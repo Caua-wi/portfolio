@@ -3,50 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Cauã Almeida</title>
-    <link rel="stylesheet" href="portfolio_styles.css"> <!-- Referência ao CSS -->
+    <title>Cauã Almeida | Assistente Administrativo e estudante de ADS</title>
+    <meta name="description" content="Portfólio de Cauã Almeida: assistente administrativo na Fametro com experiência no TOTVS RM e estudante de Análise e Desenvolvimento de Sistemas.">
+    <meta name="theme-color" content="#0b5c9e">
+    <link rel="canonical" href="https://cauaalmeida.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Cauã Almeida | Assistente Administrativo e estudante de ADS">
+    <meta property="og:description" content="Experiência com TOTVS RM, gestão de dados e processos administrativos, em formação em Análise e Desenvolvimento de Sistemas.">
+    <meta property="og:url" content="https://cauaalmeida.netlify.app/">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b5c9e'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' font-weight='700' text-anchor='middle' fill='white'%3EC%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="portfolio_styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Cauã Almeida - Portfólio</h1>
-        <p>Assistente Administrativo | Estudante de ADS | Administração e Gestão Acadêmica</p>
-        
-        <div class="section">
-            <h2>Sobre Mim</h2>
-            <p>Atualmente trabalho como assistente administrativo na Fametro, utilizando o sistema TOTVS RM. Estudo Análise e Desenvolvimento de Sistemas e possuo experiência com atendimento acadêmico, gestão de dados e parametrização de sistemas.</p>
+    <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="topo">
+        <div class="topo-interno">
+            <a class="marca" href="#inicio">Cauã Almeida</a>
+            <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <nav class="menu" id="menu" aria-label="Principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#competencias">Competências</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#formacao">Formação</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
-        
-        <div class="section">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Administração acadêmica (TOTVS RM)</li>
-                <li>Gestão de Dados e Relatórios</li>
-                <li>Pacote Office (Excel, Word, PowerPoint)</li>
-                <li>HTML Básico</li>
-                <li>Adobe (OpenGG - Nível Iniciante)</li>
-                <li>Inglês - Nível 3</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Experiência Profissional</h2>
-            <p><strong>Assistente Administrativo – Fametro (Desde 08/07/2024)</strong></p>
-            <p>Atuação no sistema TOTVS RM, parametrização acadêmica, atendimento institucional e otimização de processos administrativos.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Formação Acadêmica</h2>
-            <p><strong>Ensino Médio Completo</strong> - Escola Estadual Roderick de Castelo Branco</p>
-            <p><strong>Curso Técnico:</strong> Análise e Desenvolvimento de Sistemas (Em andamento)</p>
-        </div>
-        
-        <div class="section">
-            <h2>Contato</h2>
-            <p>Email: <a href="mailto:cauaalmeida272@gmail.com">cauaalmeida272@gmail.com</a></p>
-            <p>Telefone: (92) 99450-5866</p>
-        </div>
-        
-        <a href="https://api.whatsapp.com/send?phone=5592994505866&text=Bom%20dia" class="cta-button" target="_blank" rel="noopener noreferrer">Entre em Contato</a>
-    </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero" id="inicio">
+            <h1>Cauã Almeida</h1>
+            <p class="destaque">Assistente administrativo na Fametro, com experiência no sistema TOTVS RM, e estudante de Análise e Desenvolvimento de Sistemas.</p>
+            <p>Trabalho com atendimento acadêmico, dados e processos administrativos, e estudo programação para atuar na interface entre operação e tecnologia.</p>
+            <div class="acoes">
+                <a class="btn" href="#experiencia">Ver experiência</a>
+                <a class="btn btn-sec" href="#contato">Entrar em contato</a>
+            </div>
+        </section>
+
+        <section class="secao" id="sobre" aria-labelledby="t-sobre">
+            <h2 id="t-sobre">Sobre mim</h2>
+            <div class="conteudo">
+                <p>Desde julho de 2024 trabalho na Fametro, onde atendo demandas acadêmicas e administrativas e opero o sistema TOTVS RM. No dia a dia lido com gestão de dados, parametrização acadêmica e organização de informações.</p>
+                <p>Em paralelo, curso Análise e Desenvolvimento de Sistemas e pratico HTML, CSS e Python, com o objetivo de levar o que conheço de processos e sistemas corporativos para a área de tecnologia.</p>
+            </div>
+        </section>
+
+        <section class="secao" id="experiencia" aria-labelledby="t-exp">
+            <h2 id="t-exp">Experiência profissional</h2>
+            <div class="conteudo">
+                <article class="bloco">
+                    <h3>Assistente Administrativo</h3>
+                    <p class="meta">Fametro, desde 08/07/2024</p>
+                    <ul>
+                        <li>Atendimento acadêmico e institucional.</li>
+                        <li>Parametrização acadêmica no sistema TOTVS RM.</li>
+                        <li>Gestão de dados e elaboração de relatórios.</li>
+                        <li>Organização de informações e otimização de processos administrativos.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao" id="competencias" aria-labelledby="t-comp">
+            <h2 id="t-comp">Competências</h2>
+            <div class="conteudo grade">
+                <article class="bloco">
+                    <h3>Administrativas</h3>
+                    <ul>
+                        <li>Atendimento acadêmico</li>
+                        <li>Processos administrativos</li>
+                        <li>Organização de informações</li>
+                    </ul>
+                </article>
+                <article class="bloco">
+                    <h3>Sistemas e dados</h3>
+                    <ul>
+                        <li>TOTVS RM (parametrização acadêmica)</li>
+                        <li>Gestão de dados</li>
+                        <li>Elaboração de relatórios</li>
+                    </ul>
+                </article>
+                <article class="bloco">
+                    <h3>Ferramentas de produtividade</h3>
+                    <ul>
+                        <li>Excel</li>
+                        <li>Word</li>
+                        <li>PowerPoint</li>
+                    </ul>
+                </article>
+                <article class="bloco">
+                    <h3>Em desenvolvimento</h3>
+                    <ul>
+                        <li>HTML e CSS (nível inicial)</li>
+                        <li>Python (nível inicial)</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao" id="projetos" aria-labelledby="t-proj">
+            <h2 id="t-proj">Projetos e estudos</h2>
+            <div class="conteudo">
+                <!--
+                    Para adicionar um projeto, copie o bloco abaixo para dentro desta div
+                    (e apague o parágrafo "vazio"):
+
+                    <article class="bloco">
+                        <h3>Nome do projeto</h3>
+                        <p class="meta">Tipo (exercício, automação, relatório) e ano</p>
+                        <p>O que foi feito, com quais ferramentas e o que você aprendeu.</p>
+                        <p><a href="URL-DO-REPOSITORIO">Ver no GitHub</a></p>
+                    </article>
+                -->
+                <p class="vazio">Ainda não há projetos publicados. Esta seção vai reunir exercícios, automações e aplicações desenvolvidas durante a graduação.</p>
+            </div>
+        </section>
+
+        <section class="secao" id="formacao" aria-labelledby="t-form">
+            <h2 id="t-form">Formação acadêmica</h2>
+            <div class="conteudo">
+                <article class="bloco">
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <p class="meta">Graduação, em andamento</p>
+                </article>
+                <article class="bloco">
+                    <h3>Ensino Médio completo</h3>
+                    <p class="meta">Escola Estadual Roderick de Castelo Branco</p>
+                </article>
+                <article class="bloco">
+                    <h3>Inglês</h3>
+                    <p class="meta">Nível 3</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao" id="contato" aria-labelledby="t-cont">
+            <h2 id="t-cont">Contato</h2>
+            <div class="conteudo">
+                <p>Para oportunidades, conversas profissionais ou dúvidas sobre meu trabalho, fale comigo por um destes canais.</p>
+                <ul class="contatos">
+                    <li><a href="mailto:cauaalmeida272@gmail.com">cauaalmeida272@gmail.com</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5592994505866&amp;text=Bom%20dia" target="_blank" rel="noopener noreferrer">WhatsApp: (92) 99450-5866</a></li>
+                    <li><a href="https://github.com/Caua-wi" target="_blank" rel="noopener noreferrer">GitHub: Caua-wi</a></li>
+                </ul>
+                <a class="btn" href="mailto:cauaalmeida272@gmail.com">Enviar e-mail</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2026 Cauã Almeida</p>
+    </footer>
 </body>
 </html>
