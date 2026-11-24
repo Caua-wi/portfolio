@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fila acadêmica | Cauã Almeida</title>
+  <link rel="stylesheet" href="../../portfolio_styles.css">
+  <style>
+    main { padding-block: 2rem 4rem; }
+    h1 { font: bold clamp(2.4rem,7vw,4rem)/1.1 var(--serif); margin: 2rem 0 1rem; }
+    h2 { font: bold 1.5rem var(--serif); margin-bottom: 1rem; }
+    .painel { background: white; border: 1px solid var(--linha); border-radius: 8px; padding: clamp(1rem,3vw,2rem); margin-top: 1rem; }
+    #carga { display: flex; gap: 1rem; flex-wrap: wrap; }
+    #carga li { flex: 1 1 8rem; border-top: 3px solid var(--destaque); padding-top: .6rem; }
+    #carga strong { display: block; font-size: 1.6rem; }
+    #fila li { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem; border-top: 1px solid var(--linha); padding: .85rem 0; }
+    #fila small { display: block; color: var(--suave); }
+    button { font: inherit; cursor: pointer; }
+    .btn:disabled { background: var(--suave); border-color: var(--suave); cursor: default; transform: none; }
+    button.secundario { background: white; color: var(--destaque); border: 1px solid var(--destaque); border-radius: 6px; padding: .45rem .85rem; }
+    #aviso { margin: .8rem 0 0; }
+    #aviso:empty { margin: 0; }
+  </style>
+  <script src="fila.js" defer></script>
+</head>
+<body>
+  <main>
+    <a href="../../index.html#projetos">← Voltar aos projetos</a>
+    <h1>Fila acadêmica</h1>
+    <p>Simule um plantão de secretaria com seis chamados fictícios. Distribua o mais antigo em espera para quem tem menos atendimentos em aberto. Em caso de empate, vale a ordem alfabética.</p>
+    <noscript>Ative o JavaScript para testar a distribuição de chamados.</noscript>
+    <section class="painel">
+      <h2>Atendimentos em aberto por técnico</h2>
+      <ul id="carga"></ul>
+      <div class="acoes">
+        <button id="distribuir" class="btn" type="button">Distribuir próximo</button>
+        <button id="reiniciar" class="secundario" type="button">Reiniciar simulação</button>
+      </div>
+      <p id="aviso" role="status"></p>
+    </section>
+    <section class="painel">
+      <h2>Chamados do plantão</h2>
+      <ul id="fila"></ul>
+    </section>
+  </main>
+</body>
+</html>
