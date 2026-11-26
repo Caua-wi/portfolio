@@ -4,6 +4,12 @@ Assistente administrativo na Fametro e estudante de Análise e Desenvolvimento d
 
 [Abrir o portfólio](https://cauaalmeida.netlify.app/)
 
+## Meu Tom
+
+[Experimentar o editor](https://caua-wi.github.io/Meu-Tom-/) · [Consultar o código](https://github.com/Caua-wi/Meu-Tom-)
+
+O Meu Tom revisa mensagens em português com base nos seus exemplos de escrita, no público e no tom que você escolher. No primeiro uso, o navegador baixa o modelo de IA. A revisão acontece no seu dispositivo com WebGPU.
+
 ## Fila acadêmica
 
 [Experimentar o simulador](https://cauaalmeida.netlify.app/projetos/fila-academica/index.html) · [Consultar o código](projetos/fila-academica/)
