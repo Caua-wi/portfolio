@@ -76,6 +76,8 @@ main { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
 .projeto h3 { font: bold clamp(2rem, 4vw, 3rem)/1.08 var(--serif); margin: 24px 0 14px; }
 .tecnologias { font-size: .9rem; }
 .projeto a { display: inline-block; font-weight: 650; color: white; padding-block: 6px; }
+.projeto article + article { margin-top: 24px; padding-top: 4px; border-top: 1px solid #638499; }
+.links-projeto { display: flex; flex-wrap: wrap; gap: 4px 18px; }
 .projeto a:focus-visible { outline-color: white; }
 @media (max-width: 760px) {
     .abertura { grid-template-columns: 1fr; }
