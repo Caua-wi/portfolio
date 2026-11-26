@@ -25,10 +25,10 @@
             <a class="marca" href="#inicio">Cauã Almeida</a>
             <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
             <nav class="menu" id="menu" aria-label="Principal">
+                <a href="#projetos">Projetos</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#experiencia">Experiência</a>
                 <a href="#competencias">Competências</a>
-                <a href="#projetos">Projetos</a>
                 <a href="#formacao">Formação</a>
                 <a href="#contato">Contato</a>
             </nav>
@@ -36,15 +36,37 @@
     </header>
 
     <main id="conteudo">
-        <section class="hero" id="inicio">
-            <h1>Cauã Almeida</h1>
-            <p class="destaque">Assistente administrativo na Fametro, com experiência no sistema TOTVS RM, e estudante de Análise e Desenvolvimento de Sistemas.</p>
-            <p>Trabalho com atendimento acadêmico, dados e processos administrativos, e estudo programação para atuar na interface entre operação e tecnologia.</p>
-            <div class="acoes">
-                <a class="btn" href="#experiencia">Ver experiência</a>
-                <a class="btn btn-sec" href="#contato">Entrar em contato</a>
-            </div>
-        </section>
+        <div class="abertura">
+            <section class="hero" id="inicio">
+                <p class="local">Manaus, AM</p>
+                <h1>Cauã Almeida</h1>
+                <p class="destaque">Da secretaria acadêmica ao desenvolvimento de sistemas.</p>
+                <p>Trabalho com turmas, matrizes e relatórios no TOTVS RM da Fametro. Na graduação em ADS, transformo problemas que conheço da rotina em projetos de programação.</p>
+                <div class="acoes">
+                    <a class="btn" href="#projetos">Ver projetos</a>
+                    <a class="btn btn-sec" href="#experiencia">Ver experiência</a>
+                </div>
+            </section>
+
+            <section class="projeto" id="projetos" aria-labelledby="t-proj">
+                <h2 id="t-proj">Projetos</h2>
+                <article>
+                    <h3>Meu Tom</h3>
+                    <p>Um editor que revisa mensagens em português com base nos seus exemplos de escrita, no público e no tom que você escolher. A IA roda no seu dispositivo.</p>
+                    <p class="tecnologias">WebLLM · WebGPU</p>
+                    <div class="links-projeto">
+                        <a href="https://caua-wi.github.io/Meu-Tom-/">Abrir o editor <span aria-hidden="true">→</span></a>
+                        <a href="https://github.com/Caua-wi/Meu-Tom-">Código no GitHub</a>
+                    </div>
+                </article>
+                <article>
+                    <h3>Fila acadêmica</h3>
+                    <p>Quem recebe o próximo chamado quando a equipe já está atendendo? Distribua seis solicitações fictícias e acompanhe a carga de três técnicos.</p>
+                    <p class="tecnologias">HTML · CSS · JavaScript</p>
+                    <a href="projetos/fila-academica/index.html">Testar o simulador <span aria-hidden="true">→</span></a>
+                </article>
+            </section>
+        </div>
 
         <section class="secao" id="sobre" aria-labelledby="t-sobre">
             <h2 id="t-sobre">Sobre mim</h2>
@@ -107,18 +129,6 @@
             </div>
         </section>
 
-        <section class="secao" id="projetos" aria-labelledby="t-proj">
-            <h2 id="t-proj">Projetos e estudos</h2>
-            <div class="conteudo">
-                <article class="bloco">
-                    <h3>Fila acadêmica</h3>
-                    <p class="meta">Simulador de atendimento · HTML, CSS e JavaScript</p>
-                    <p>Quem deve receber o próximo chamado? Distribua solicitações fictícias entre três técnicos e veja como cada atendimento altera a carga da equipe.</p>
-                    <a class="btn" href="projetos/fila-academica/index.html">Testar o simulador</a>
-                </article>
-            </div>
-        </section>
-
         <section class="secao" id="formacao" aria-labelledby="t-form">
             <h2 id="t-form">Formação acadêmica</h2>
             <div class="conteudo">
@@ -140,13 +150,8 @@
         <section class="secao" id="contato" aria-labelledby="t-cont">
             <h2 id="t-cont">Contato</h2>
             <div class="conteudo">
-                <p>Para oportunidades, conversas profissionais ou dúvidas sobre meu trabalho, fale comigo por um destes canais.</p>
-                <ul class="contatos">
-                    <li><a href="mailto:cauaalmeida272@gmail.com">cauaalme.com</a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=5505866&amp;text=Bom%20dia" target="_blank" rel="noopener noreferrer">WhatsApp: (92) 866</a></li>
-                    <li><a href="https://github.com/Caua-wi" target="_blank" rel="noopener noreferrer">GitHub: Caua-wi</a></li>
-                </ul>
-                <a class="btn" href="mailto:cau2@gmail.com">Enviar e-mail</a>
+                <p>Você encontra meus projetos e acompanha o que estou desenvolvendo pelo GitHub.</p>
+                <a class="btn" href="https://github.com/Caua-wi">Visitar meu perfil no GitHub</a>
             </div>
         </section>
     </main>
